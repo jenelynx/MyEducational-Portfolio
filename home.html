@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Choose Chapter</title>
+
+<style>
+
+/* ===== RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body{
+  background:
+    linear-gradient(rgba(255,255,255,0.25), rgba(255,255,255,0.25)),
+    url("https://i.pinimg.com/1200x/b3/be/3a/b3be3a3d7253c5e0d796574cae5a3391.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 70px;
+  background:whitesmoke;
+  box-shadow:0 3px 10px rgba(0,0,0,0.15);
+}
+
+.logo{
+  font-size:24px;
+  font-weight:bold;
+  color:#006080;
+}
+
+nav ul{
+  list-style:none;
+  display:flex;
+  align-items:center;
+}
+
+nav ul li{
+  margin-left:30px;
+}
+
+nav ul li a{
+  text-decoration:none;
+  color:#006080;
+  font-size:16px;
+  font-weight:bold;
+}
+
+/* ===== HOME ===== */
+.home{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:40px;
+}
+
+/* ===== CARD ===== */
+.card{
+  background:white;
+  padding:50px 40px;
+  max-width:700px;
+  width:95%;
+  text-align:center;
+  border-radius:22px;
+  box-shadow:0 20px 50px rgba(0,0,0,0.3);
+}
+
+.card h1{
+  font-size:36px;
+  margin-bottom:20px;
+  color:#006080;
+}
+
+/* ===== IMAGE ===== */
+.card img{
+  width:250px;        /* Fixed width for perfect fit */
+  height:auto;        /* Keep aspect ratio */
+  border-radius:12px;
+  margin-bottom:25px;
+}
+
+/* ===== BUTTONS ===== */
+.buttons{
+  display:flex;
+  flex-direction:column;
+  gap:15px;
+}
+
+.btn{
+  background:#00ace6;
+  color:white;
+  padding:14px 25px;
+  border-radius:25px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#006080;
+  color:white;
+  text-align:center;
+  padding:20px;
+  font-size:14px;
+}
+
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Jenelyn Sunido</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a href="login.html" class="logout" onclick="logout()">Logout</a></li>
+  </ul>
+</nav>
+
+<section class="home">
+  <div class="card">
+
+    <h1>Choose a Chapter</h1>
+
+    <!-- Adjusted Image -->
+    <img src="https://www.maplepress.co.in/cdn/shop/files/9789363793613_1_1200x1200.jpg?v=1723440049" 
+         alt="The Ant and the Grasshopper">
+
+    <div class="buttons">
+      <a href="chapter1.html" class="btn">Chapter 1</a>
+      <a href="chapter2.html" class="btn">Chapter 2</a>
+      <a href="chapter3.html" class="btn">Chapter 3</a>
+      <a href="midterm.html" class="btn">Back</a>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+© 2026 Student Portfolio | Jenelyn Sunido
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Educational Portfolio</title>
+  <style>
+    /* ----- RESET & BASE ----- */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Arial, sans-serif;
+    }
+
+    body {
+      background: linear-gradient(rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2)),
+                  url("https://i.pinimg.com/1200x/b3/be/3a/b3be3a3d7253c5e0d796574cae5a3391.jpg");
+      background-size: cover;
+      background-position: center;
+      background-attachment: fixed;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* ----- NAVBAR ----- */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 70px;
+      background: rgba(255, 255, 255, 0.9);
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #006080;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      align-items: center;
+    }
+
+    nav ul li {
+      margin-left: 30px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #006080;
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .logout {
+      background: #00ace6;
+      color: white;
+      padding: 6px 16px;
+      border-radius: 20px;
+    }
+
+    /* ----- MAIN LAYOUT ----- */
+    .home {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 50px;
+    }
+
+    .container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    /* ----- CARD STYLE ----- */
+    .card {
+      background: white;
+      padding: 40px;
+      width: 420px;
+      border-radius: 20px;
+      box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+      transition: 0.3s;
+    }
+
+    .card h2 {
+      font-size: 26px;
+      margin-bottom: 25px;
+      color: #006080;
+      text-align: center;
+    }
+
+    /* profile section */
+    .profile {
+      text-align: center;
+    }
+
+    .profile img {
+      width: 130px;
+      height: 130px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 5px solid #00ace6;
+      margin-bottom: 20px;
+    }
+
+    .info {
+      text-align: left;
+      max-width: 280px;
+      margin: auto;
+    }
+
+    .info p {
+      font-size: 16px;
+      margin-bottom: 10px;
+      color: #334155;
+    }
+
+    /* goal card */
+    .goal p {
+      font-size: 16px;
+      line-height: 1.7;
+      color: #334155;
+      margin-bottom: 12px;
+    }
+
+    /* ----- FOOTER ----- */
+    footer {
+      background: #006080;
+      color: white;
+      text-align: center;
+      padding: 18px;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <nav>
+    <div class="logo">Jenelyn Sunido</div>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="project.html">Project</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="login.html" class="logout" onclick="logout()">Logout</a></li>
+    </ul>
+  </nav>
+
+  <!-- ===== MAIN CARDS ===== -->
+  <section class="home">
+    <div class="container">
+
+      <!-- PERSONAL INFO CARD -->
+      <div class="card">
+        <h2>Personal Information</h2>
+        <div class="profile">
+          <img src="profile.jpg" alt="Jenelyn profile">
+          <div class="info">
+            <p><b>Name:</b> Jenelyn B. Sunido</p>
+            <p><b>Age:</b> 19 years old</p>
+            <p><b>Email:</b> jenelynbaldosunido@gmail.com</p>
+            <p><b>Contact:</b> 0976 543 2100</p>
+            <p><b>Location:</b> Maturanoc, Guimba, Nueva Ecija</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- MY GOAL CARD -->
+      <div class="card goal">
+        <h2>My Goal</h2>
+        <p>
+          I am currently pursuing a Bachelor of Science in Information
+          Technology with a strong interest in programming and web development.
+        </p>
+        <p>
+          My academic journey has helped me gain skills in coding,
+          web design, and problem solving through different projects.
+        </p>
+        <p>
+          My goal is to become a successful IT professional and
+          continue learning new technologies.
+        </p>
+      </div>
+
+    </div> <!-- end container -->
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    © 2026 Student Portfolio | Jenelyn B. Sunido
+  </footer>
+
+  <script>
+    function logout() {
+      alert("You have been logged out.");
+    }
+  </script>
+
+</body>
+</html>

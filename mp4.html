@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Video Project - My Portfolio</title>
+
+<style>
+/* ===== RESET ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', Arial, sans-serif;
+}
+
+/* ===== BACKGROUND ===== */
+body{
+  background:
+  linear-gradient(rgba(255,255,255,0.2), rgba(255,255,255,0.2)),
+  url("https://i.pinimg.com/1200x/b3/be/3a/b3be3a3d7253c5e0d796574cae5a3391.jpg");
+  background-size:cover;
+  background-position:center;
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+}
+
+/* ===== NAVBAR ===== */
+nav{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:18px 70px;
+background:rgba(255,255,255,0.9);
+box-shadow:0 5px 15px rgba(0,0,0,0.15);
+}
+
+.logo{
+font-size:24px;
+font-weight:bold;
+color:#006080;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+align-items:center;
+}
+
+nav ul li{
+margin-left:30px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:#006080;
+font-size:16px;
+font-weight:bold;
+}
+
+.logout{
+background:#00ace6;
+color:white;
+padding:6px 16px;
+border-radius:20px;
+}
+
+/* ===== MAIN SECTION ===== */
+.home{
+  flex:1;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  padding:50px 20px;
+}
+
+/* ===== CONTAINER ===== */
+.container{
+  display:flex;
+  gap:40px;
+  flex-wrap:wrap;
+  justify-content:center;
+  max-width:1200px;
+  width:100%;
+}
+
+/* ===== CARD ===== */
+.card{
+  background:white;
+  padding:40px;
+  width:420px;
+  border-radius:20px;
+  box-shadow:0 18px 40px rgba(0,0,0,0.25);
+  transition:0.3s;
+  text-align:center;
+}
+
+.card h2{
+  font-size:26px;
+  margin-bottom:25px;
+  color:#006080;
+  text-align:center;
+}
+
+.card p{
+  font-size:16px;
+  line-height:1.7;
+  color:#334155;
+  margin-bottom:20px;
+}
+
+.card video{
+  width:100%;
+  border-radius:12px;
+  margin-bottom:20px;
+}
+
+/* ===== BUTTONS ===== */
+.buttons a{
+  display:inline-block;
+  text-decoration:none;
+  background:#00ace6;
+  color:white;
+  padding:12px 28px;
+  border-radius:25px;
+  font-weight:bold;
+  transition:0.3s;
+  margin-top:10px;
+}
+
+.buttons a:hover{
+  background:#007bb3;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  background:#006080;
+  color:white;
+  text-align:center;
+  padding:18px;
+  font-size:14px;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:900px){
+  .container{
+    flex-direction:column;
+    align-items:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+  <div class="logo">Jenelyn Sunido</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="project.html">Project</a></li>
+    <li><a href="contact.html">Contact</a></li>
+   <li><a href="login.html" class="logout" onclick="logout()">Logout</a></li>
+  </ul>
+</nav>
+
+<section class="home">
+  <div class="container">
+
+    <!-- Card 1: Overview -->
+    <div class="card">
+      <h2>Video Project Overview</h2>
+      <p>
+        This tutorial introduces the basics of HTML and shows beginners how web pages are structured.
+        Learners will explore elements like headings, paragraphs, links, and images.
+        By the end, learners will have a solid foundation to start building their own web pages.
+      </p>
+      <div class="buttons">
+        <a href="midterm.html">Return to Midterm Task</a>
+      </div>
+    </div>
+
+   <!-- Card 2: Video -->
+<div class="card">
+  <h2>Tutorial in HTML in 5 Minutes</h2>
+
+  <!-- Video bigger -->
+  <video controls style="width:100%; max-width:460px; height:auto; border-radius:15px; margin-bottom:20px;">
+    <source src="HTML in 5 minutes.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+</div>
+
+  </div>
+</section>
+
+<footer>
+© 2026 Jenelyn Sunido | My Educational Portfolio
+</footer>
+
+<script>
+function logout(){
+  alert("You have been logged out.");
+}
+</script>
+
+</body>
+</html>
